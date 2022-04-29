@@ -1,4 +1,2 @@
-FROM openjdk:11
-COPY . /src/* .jar /
-EXPOSE 8087
-ENTRYPOINT ["java","-jar","/webapp.jar"]
+FROM valaxy1/project-04
+EXPOSE 8085
