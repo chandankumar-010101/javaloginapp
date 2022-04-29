@@ -1,4 +1,5 @@
-FROM openjdk
-COPY target/*.jar /
+FROM openjdk:11
+COPY . /usr/src/* .jar /
+//COPY target/*.jar /
 EXPOSE 8087
-ENTRYPOINT ["java","-jar","/my-app-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/webapp.jar"]
